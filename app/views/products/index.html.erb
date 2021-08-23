@@ -1,0 +1,9 @@
+<% if cart.empty? %>
+  <h3>Your cart is currently empty</h3>
+<% else %>
+  <% cart.each do |item| %>
+    <h4><%= item %></h4><br>
+  <% end %>
+<% end %>
+
+<%= render 'form' %>
